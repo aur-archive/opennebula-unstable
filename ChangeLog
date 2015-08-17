@@ -1,0 +1,172 @@
+2015-05-05 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.12.1-1:
+	New upstream release (4.12.1).
+
+2015-03-11 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.12.0-1:
+	New upstream release (4.12.0).
+
+2015-02-13 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.10.2-1:
+	New upstream release (4.10.2).
+
+2014-12-03 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.10.1-1:
+	New upstream release (4.10.1).
+
+2014-11-05 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.10.0-1:
+	New upstream release (4.10.0).
+
+2014-08-28 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.8.0-1:
+	New upstream release (4.8.0).
+
+2014-07-09 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.6.2-1:
+	New upstream release (4.6.2).
+
+2014-06-11 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.6.1-2:
+	Use explicitly versioned hyperlinks for the unstable package.
+
+2014-05-25 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.6.1-1:
+	New upstream release (4.6.1).
+
+2014-04-12 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.5.85-1:
+	New upstream release (4.5.85).
+
+2014-03-15 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.5.79-1/4.6-beta1-1:
+	New upstream release (4.5.79/4.6-beta1).
+
+2014-02-05 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.4.1-1:
+	New upstream release (4.4.1).
+	Added dependency 'ruby-opennebula'.
+	Removed message in post_install() about installing the 'sequel' Ruby gem.
+	Updated documentation links in the PKGBUILD.
+	Added message in post_remove() about uninstalling Ruby gems via pacman.
+
+2013-12-16 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.4.0-1:
+	New upstream release (4.4.0).
+	Require xmlrpc-c >= 1.31 and build with option "new_xmlrpc=yes".
+	Patch 'install.sh' script in prepare() instead of package().
+
+2013-05-22 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.0.1-1:
+	New upstream release (4.0.1).
+
+2013-05-13 Jason St. John <jstjohn .. purdue . edu>
+
+	* 4.0.0-1:
+	New upstream release (4.0.0).
+
+2013-04-23 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.9.90-1:
+	New upstream release (3.9.90).
+
+2013-03-38 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.9.80-1 (unreleased):
+	New upstream release (3.9.80).
+	Replaced dependencies on MySQL with their MariaDB counterparts per the
+	   Arch announcement.
+	Replaced dependency on 'xmlrpc-c-abyss' with 'xmlrpc-c', as the Arch
+	   package in [community] now enables abyss.
+	Added dependency 'log4cpp'.
+
+2013-02-06 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.8.3-2:
+	Dropped package support for Arch's initscripts.
+	Removed the 'oned' rc.d script.
+
+2013-01-11 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.8.3-1:
+	New upstream release (3.8.3).
+	Removed unnecessary var_run.patch.
+
+2012-12-11 Jason St. John <jstjohn .. purdue . edu>
+	* 3.8.1-2:
+	Removed Vim modelines from PKGBUILD and other files.
+	Replaced the two-space indents with tabs.
+	Fixed a bug when creating a default .one/one_auth file.
+
+2012-10-30 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.8.1-1:
+	New upstream release (3.8.1).
+
+2012-10-22 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.8.0-1:
+	New upstream release (3.8.0).
+	As of this release, this package will be updated to both the stable and
+	   unstable versions of OpenNebula. It seemed foolish to require users to
+	   regularly switch packages if they always wanted to be on the latest
+	   version. In short, this package will be updated more frequently than
+	   the stable 'opennebula' package.
+	Two harmless possible error messages when building the package are now
+		sent to /dev/null.
+
+2012-10-11 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.7.80-1:
+	New upstream release (3.7.80).
+	Minor change in the pre_remove() messages added in version 3.3.80-1.
+	Added a systemd service file.
+
+2012-06-25 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.5.80-1:
+	New upstream release (3.5.80).
+	Added minimum dependency versions to PKGBUILD.
+	Patched install.sh to use /run instead of /var/run.
+	Patched install.sh to not chown directories because the package otherwise
+	   fails to build on fresh installations.
+	Removed patch that was necessary only for version 3.3.80.
+	Removed message in opennebula-unstable.install regarding the
+	   aforementioned patch.
+	Slightly altered the messages in opennebula.install to be more visible.
+
+2012-04-01 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.3.80-1:
+	New upstream release (3.3.80).
+	Added message to opennebula-unstable.install regarding manual upgrade
+	   procedures.
+	Added fix for two minor bugs in the upstream 3.3.80 release to the
+	   PKGBUILD.
+	Added messages to pre_remove() in opennebula-unstable.install that echo
+	   a message when oneadmin:cloud is removed from the system.
+
+2012-03-02 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.3.0-2:
+	Added 'cdrkit' as a dependency for contextualization.
+
+2012-02-25 Jason St. John <jstjohn .. purdue . edu>
+
+	* 3.3.0-1:
+	Initial release of the latest development version of OpenNebula.
+
